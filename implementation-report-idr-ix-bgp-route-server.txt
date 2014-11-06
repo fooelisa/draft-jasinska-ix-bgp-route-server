@@ -1,0 +1,120 @@
+Implementation Report                                       Elisa Jasinska
+                                                              Netflix, Inc
+
+                              June 2014
+
+       Internet Exchange Route Server - Implementation Report
+
+
+Abstract
+
+    This document provides a survey of Internet Exchange Route Server 
+    implementations.
+
+
+1. Survey Summary
+
+    This document provides a survey of Internet Exchange Route Server [1]
+    implementations.  After a brief summary, each response is listed.
+    The editor makes no claim as to the accuracy of the information
+    provided.
+
+    The following organizations reported having implementations of
+    Internet Exchange Route Server: Cisco Systems, BIRD and Quagga.
+
+    All Route Server implementations adhere to the specifications 
+    described in [1]. All implementations provide the means for per-peer
+    policy control.
+
+    Multiple test studies have been published on resource consumption
+    of Route Server implementations of the various vendors, e.g.:
+
+    http://www.nanog.org/meetings/nanog48/presentations/Monday/Jasinska_RouteServer_N48.pdf 
+
+
+2. Survey Forms
+
+
+2.1. Cisco Systems
+
+     Person filling out this form: Robert Raszuk <robert@raszuk.net>
+
+     Does your Route Server implementation do the following as
+     defined in draft-ietf-idr-ix-bgp-route-server-05.txt?
+
+       Accept, process and forward client UPDATE messages according to 
+       Section 2.1?
+
+        YES
+
+       Perform attribute transparency according to Section 2.2?
+
+        YES
+
+       Allow for per-client routing policy control without path hiding
+       using one of the methods described in Section 2.3.2?
+
+        YES
+
+
+2.2. BIRD
+
+     Person filling out this form: Ondrej Filip <feela@network.cz>
+
+     Does your Route Server implementation do the following as
+     defined in draft-ietf-idr-ix-bgp-route-server-05.txt?
+
+       Accept, process and forward client UPDATE messages according to 
+       Section 2.1?
+
+        YES
+
+       Perform attribute transparency according to Section 2.2?
+
+        YES
+
+       Allow for per-client routing policy control without path hiding
+       using one of the methods described in Section 2.3.2?
+
+        YES
+
+
+2.3. Quagga
+
+     Person filling out this form: David Lamparter <equinox@diac24.net>
+
+     Does your Route Server implementation do the following as
+     defined in draft-ietf-idr-ix-bgp-route-server-05.txt?
+
+       Accept, process and forward client UPDATE messages according to 
+       Section 2.1?
+
+        YES
+
+       Perform attribute transparency according to Section 2.2?
+
+        YES
+
+       Allow for per-client routing policy control without path hiding
+       using one of the methods described in Section 2.3.2?
+
+        YES
+
+
+3. References
+
+[1]  Jasinska, E., Hilliard, N., Raszuk, R., and N. Bakker,
+     "Internet Exchange Route Server",
+     draft-ietf-idr-ix-bgp-route-server-05 (work in progress),
+     June 2014.
+
+
+4. Author's Address
+
+   Elisa Jasinska
+   Netflix, Inc
+   100 Winchester Circle
+   Los Gatos, CA  95032
+   USA
+
+   Email: elisa@netflix.com
