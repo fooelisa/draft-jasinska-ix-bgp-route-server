@@ -75,13 +75,22 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
       </address>
     </author>
 
-
-    <author initials="R" surname="Raszuk" fullname="Robert Raszuk">
-      <organization>Individual</organization>
+    <author fullname='Robert Raszuk' initials='R' surname='Raszuk'>
+      <organization>Mirantis Inc.</organization>
       <address>
+        <postal>
+          <street>615 National Ave. #100</street>
+          <city>Mt View</city>
+          <region>CA</region>
+          <code>94043</code>
+          <country>USA</country>
+        </postal>
+        <phone></phone>
+        <facsimile></facsimile>
         <email>robert@raszuk.net</email>
+        <uri></uri>
       </address>
-    </author> 
+    </author>
 
     <author initials="N" surname="Bakker" fullname="Niels Bakker">
       <organization>Akamai Technologies B.V.</organization>
