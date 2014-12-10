@@ -30,7 +30,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
 <!-- keep one blank line between list items -->
 <!-- end of list of popular I-D processing instructions -->
 <rfc category="std"
-     docName="draft-ietf-idr-ix-bgp-route-server-07"
+     docName="draft-ietf-idr-ix-bgp-route-server-06"
      ipr="trust200902"
      obsoletes=""
      updates=""
