@@ -1,7 +1,7 @@
 Implementation Report                                       Elisa Jasinska
                                                               Netflix, Inc
 
-                              June 2014
+                            December 2014
 
        Internet Exchange Route Server - Implementation Report
 
@@ -40,7 +40,7 @@ Abstract
      Person filling out this form: Robert Raszuk <robert@raszuk.net>
 
      Does your Route Server implementation do the following as
-     defined in draft-ietf-idr-ix-bgp-route-server-05.txt?
+     defined in draft-ietf-idr-ix-bgp-route-server-06.txt?
 
        Accept, process and forward client UPDATE messages according to 
        Section 2.1?
@@ -62,7 +62,7 @@ Abstract
      Person filling out this form: Ondrej Filip <feela@network.cz>
 
      Does your Route Server implementation do the following as
-     defined in draft-ietf-idr-ix-bgp-route-server-05.txt?
+     defined in draft-ietf-idr-ix-bgp-route-server-06.txt?
 
        Accept, process and forward client UPDATE messages according to 
        Section 2.1?
@@ -84,7 +84,7 @@ Abstract
      Person filling out this form: David Lamparter <equinox@diac24.net>
 
      Does your Route Server implementation do the following as
-     defined in draft-ietf-idr-ix-bgp-route-server-05.txt?
+     defined in draft-ietf-idr-ix-bgp-route-server-06.txt?
 
        Accept, process and forward client UPDATE messages according to 
        Section 2.1?
@@ -105,8 +105,8 @@ Abstract
 
 [1]  Jasinska, E., Hilliard, N., Raszuk, R., and N. Bakker,
      "Internet Exchange Route Server",
-     draft-ietf-idr-ix-bgp-route-server-05 (work in progress),
-     June 2014.
+     draft-ietf-idr-ix-bgp-route-server-06 (work in progress),
+     December 2014.
 
 
 4. Author's Address
