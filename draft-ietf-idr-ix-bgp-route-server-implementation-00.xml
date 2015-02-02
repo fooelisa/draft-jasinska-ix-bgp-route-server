@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE rfc PUBLIC '' "http://xml2rfc.tools.ietf.org/authoring/rfc2629.dtd"[
+  <!ENTITY RFC2119 PUBLIC '' "http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml">
+  <!ENTITY I-D.ietf-idr-ix-bgp-route-server PUBLIC '' "http://xml2rfc.tools.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-idr-ix-bgp-route-server.xml">
+]>
+<?xml-stylesheet type='text/xsl' 
+
+href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
+<?rfc strict="yes" ?>
+<?rfc toc="yes"?>
+<!-- generate a ToC -->
+<?rfc tocdepth="4"?>
+<!-- the number of levels of subsections in ToC. default: 3 -->
+<!-- control references -->
+<?rfc symrefs="yes"?>
+<!-- use symbolic references tags, i.e, [RFC2119] instead of [1] -->
+<?rfc sortrefs="yes" ?>
+<!-- sort the reference entries alphabetically -->
+<!-- control vertical white space 
+     (using these PIs as follows is recommended by the RFC Editor) -->
+<?rfc compact="yes" ?>
+<!-- do not start each main section on a new page -->
+<?rfc subcompact="no" ?>
+<!-- keep one blank line between list items -->
+<!-- end of list of popular I-D processing instructions -->
+<rfc category="info"
+     docName="draft-ietf-idr-ix-bgp-route-server-implementation-00"
+     ipr="trust200902"
+     obsoletes=""
+     updates=""
+     submissionType="IETF"
+     xml:lang="en">
+  <!-- category values: std, bcp, info, exp, and historic
+     ipr values: full3667, noModification3667, noDerivatives3667
+     you can add the attributes updates="NNNN" and obsoletes="NNNN" 
+     they will automatically be output with "(if approved)" -->
+  <!-- ***** FRONT MATTER ***** -->
+
+  <front>
+
+    <title abbrev="IX BGP Route Server - Implementation">
+      Internet Exchange Route Server - Implementation Report
+    </title>
+
+    <author initials="E" surname="Jasinska" fullname="Elisa Jasinska">
+      <organization>Netflix, Inc</organization>
+      <address>
+        <postal>
+          <street>100 Winchester Circle</street>
+          <city>Los Gatos</city> 
+          <region>CA</region>
+          <code>95032</code>
+          <country>USA</country>
+        </postal>
+        <email>elisa@netflix.com</email>
+      </address>
+    </author>
+      
+    <date month="February" year="2015" />
+    <area>Routing</area>
+    <workgroup>IDR Working Group</workgroup>
+    <keyword>I-D</keyword>
+    <keyword>Internet-Draft</keyword>
+    <keyword>IDR</keyword>
+
+    <abstract>
+      <t>
+        This document provides a survey of Internet Exchange Route Server
+        implementations.
+      </t> 
+    </abstract>
+
+  </front>
+
+  <middle>
+
+    <section title="Survey Summary">
+      <t>
+    This document provides a survey of Internet Exchange Route Server
+    implemengations <xref target="I-D.ietf-idr-ix-bgp-route-server"/>.
+    After a brief summary, each response is listed.
+    The editor makes no claim as to the accuracy of the information
+    provided.
+      </t>
+      <t>
+    The following organizations reported having implementations of
+    Internet Exchange Route Server: Cisco Systems, BIRD and Quagga.
+      </t>
+      <t>
+    All Route Server implementations adhere to the specifications
+    described in <xref target="I-D.ietf-idr-ix-bgp-route-server"/>. 
+    All implementations provide the means for per-peer policy control.
+      </t>
+      <t>
+    Multiple test studies have been published on resource consumption
+    of Route Server implementations of the various vendors, e.g.:
+      </t>
+      <t>
+    http://www.nanog.org/meetings/nanog48/presentations/Monday/Jasinska_RouteServer_N48.pdf
+      </t>
+    </section>
+
+
+    <section title="Survey Forms">
+
+      <section title="Cisco Systems">
+        <t>
+          Person filling out this form: Robert Raszuk &lt;robert@raszuk.net&gt;
+        </t>
+        <t>
+          Does your Route Server implementation do the following as
+          defined in <xref target="I-D.ietf-idr-ix-bgp-route-server"/>?
+          <list style="symbols">
+            <t>
+              Accept, process and forward client UPDATE messages according 
+              to Section 2.1?
+              <list style="empty">
+                <t>
+                  YES
+                </t>
+              </list>
+            </t>
+            <t>
+              Perform attribute transparency according to Section 2.2?
+              <list style="empty">
+                <t>
+                  YES
+                </t>
+              </list>
+            </t>
+            <t>
+              Allow for per-client routing policy control without path hiding 
+              using one of the methods described in Section 2.3.2?
+              <list style="empty">
+                <t>
+                  YES
+                </t>
+              </list>
+            </t>
+          </list>
+        </t>
+      </section>
+
+      <section title="BIRD">
+        <t>
+          Person filling out this form: Ondrej Filip &lt;feela@network.cz&gt;
+        </t>
+        <t>
+          Does your Route Server implementation do the following as
+          defined in <xref target="I-D.ietf-idr-ix-bgp-route-server"/>?
+          <list style="symbols">
+            <t>
+              Accept, process and forward client UPDATE messages according 
+              to Section 2.1?
+              <list style="empty">
+                <t>
+                  YES
+                </t>
+              </list>
+            </t>
+            <t>
+              Perform attribute transparency according to Section 2.2?
+              <list style="empty">
+                <t>
+                  YES
+                </t>
+              </list>
+            </t>
+            <t>
+              Allow for per-client routing policy control without path hiding 
+              using one of the methods described in Section 2.3.2?
+              <list style="empty">
+                <t>
+                  YES
+                </t>
+              </list>
+            </t>
+          </list>
+        </t>
+      </section>
+
+      <section title="Quagga">
+        <t>
+          Person filling out this form: David Lamparter &lt;equinox@diac24.net&gt;
+        </t>
+        <t>
+          Does your Route Server implementation do the following as
+          defined in <xref target="I-D.ietf-idr-ix-bgp-route-server"/>?
+          <list style="symbols">
+            <t>
+              Accept, process and forward client UPDATE messages according 
+              to Section 2.1?
+              <list style="empty">
+                <t>
+                  YES
+                </t>
+              </list>
+            </t>
+            <t>
+              Perform attribute transparency according to Section 2.2?
+              <list style="empty">
+                <t>
+                  YES
+                </t>
+              </list>
+            </t>
+            <t>
+              Allow for per-client routing policy control without path hiding 
+              using one of the methods described in Section 2.3.2?
+              <list style="empty">
+                <t>
+                  YES
+                </t>
+              </list>
+            </t>
+          </list>
+        </t>
+      </section>
+
+    </section>
+
+    <section title="Security Considerations">
+      <t>
+        None.
+      </t>
+    </section>
+
+  </middle>
+
+  <back>
+    <references title="Normative References">
+      <?rfc include="http://xml2rfc.tools.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-idr-ix-bgp-route-server.xml"?>
+    </references>
+
+    <references title="Informative References">
+      <?rfc include="http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml"?> <!-- keywords -->
+    </references>
+  </back>
+
+</rfc>
