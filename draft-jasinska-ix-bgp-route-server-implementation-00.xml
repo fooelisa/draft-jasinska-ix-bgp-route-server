@@ -24,7 +24,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
 <!-- keep one blank line between list items -->
 <!-- end of list of popular I-D processing instructions -->
 <rfc category="info"
-     docName="draft-ietf-idr-ix-bgp-route-server-implementation-00"
+     docName="draft-jasinska-ix-bgp-route-server-implementation-00"
      ipr="trust200902"
      obsoletes=""
      updates=""
@@ -58,10 +58,8 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
       
     <date month="February" year="2015" />
     <area>Routing</area>
-    <workgroup>IDR Working Group</workgroup>
     <keyword>I-D</keyword>
     <keyword>Internet-Draft</keyword>
-    <keyword>IDR</keyword>
 
     <abstract>
       <t>

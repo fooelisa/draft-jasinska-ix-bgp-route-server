@@ -1,14 +1,14 @@
 
 
 
-IDR Working Group                                            E. Jasinska
+Network Working Group                                        E. Jasinska
 Internet-Draft                                              Netflix, Inc
 Intended status: Informational                          February 2, 2015
 Expires: August 6, 2015
 
 
          Internet Exchange Route Server - Implementation Report
-          draft-ietf-idr-ix-bgp-route-server-implementation-00
+          draft-jasinska-ix-bgp-route-server-implementation-00
 
 Abstract
 
