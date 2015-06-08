@@ -44,8 +44,8 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
 
   <front>
 
-    <title abbrev="IX BGP Route Server">
-      Internet Exchange Route Server
+    <title abbrev="IXP BGP Route Server">
+      Internet Exchange BGP Route Server
     </title>
 
     <author initials="E" surname="Jasinska" fullname="Elisa Jasinska">
@@ -85,10 +85,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
           <code>94043</code>
           <country>USA</country>
         </postal>
-        <phone></phone>
-        <facsimile></facsimile>
         <email>robert@raszuk.net</email>
-        <uri></uri>
       </address>
     </author>
 
