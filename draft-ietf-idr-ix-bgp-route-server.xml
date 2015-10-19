@@ -30,7 +30,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
 <!-- keep one blank line between list items -->
 <!-- end of list of popular I-D processing instructions -->
 <rfc category="std"
-     docName="draft-ietf-idr-ix-bgp-route-server-07"
+     docName="draft-ietf-idr-ix-bgp-route-server-09"
      ipr="trust200902"
      obsoletes=""
      updates=""
@@ -102,7 +102,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
       </address>
     </author>
 
-    <date month="June" year="2015" />
+    <date month="October" year="2015" />
     <area>Routing</area>
     <workgroup>IDR Working Group</workgroup>
     <keyword>I-D</keyword>
@@ -290,6 +290,11 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
           path being hidden from the route server client. We refer to this as 
           "path hiding".
         </t>
+        <t>
+          Neither <xref target="policy" /> nor its subsections form part of
+          the normative specification of this document, but are included for
+          information purposes only.
+        </t>
 
         <section title="Path Hiding on a Route Server" anchor="path_hiding"> 
 
@@ -375,7 +380,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
               results after the route server's client policies have been taken
               into consideration. This can be implemented by using per-client
               Loc-RIBs, with path filtering implemented between the Adj-RIB-In
-              and the per-client Loc-RIB. Implementations MAY optimize this by
+              and the per-client Loc-RIB. Implementations can optimize this by
               maintaining paths not subject to filtering policies in a
               global Loc-RIB, with per-client Loc-RIBs stored as deltas.
             </t>
@@ -448,7 +453,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
                 the propagation of inactive, invalid or suboptimal paths to
                 the route server, thereby causing loss of reachability to
                 other route server clients. For this reason, ADD-PATH
-                implementations on a route server SHOULD enforce send-only
+                implementations on a route server should enforce send-only
                 mode with the route server clients, which would result in 
                 negotiating receive-only mode from the client to the route 
                 server.
@@ -456,11 +461,11 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
             </section>
           </section>
         </section>
-        <section title="Implementation Recommendations">
+        <section title="Implementation Suggestions">
         <t>
-          A route server SHOULD implement one of the methods described in
-          <xref target="no_path_hiding" /> to allow per-client routing
-          policy control without "path hiding".
+          Route server implementation authors may wish to consider one of
+          the methods described in <xref target="no_path_hiding" /> to allow
+          per-client route server policy control without "path hiding".
         </t>
         </section>
       </section>
