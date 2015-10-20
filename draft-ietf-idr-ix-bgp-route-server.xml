@@ -509,6 +509,8 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
         and Merit. Although the original RSNG code is no longer in use at
         any IXPs, the IXP community owes a debt of gratitude to the many
         people who were involved in route server development in the 1990s.
+        Note that <xref target="RFC1863" /> was made historical by <xref
+        target="RFC4223" />.
       </t>
       
     </section>
@@ -526,6 +528,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
       <?rfc include="http://xml2rfc.tools.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-idr-add-paths.xml"?>
       <?rfc include="http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.6774.xml"?> <!-- diverse paths -->
       <?rfc include="http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.1863.xml"?> <!-- old route server rfc -->
+      <?rfc include="http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.4223.xml"?> <!-- RFC 1863 to Historic -->
       <?rfc include="http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.4456.xml"?> <!-- Route Reflector IBGP -->
     </references>
   </back>
