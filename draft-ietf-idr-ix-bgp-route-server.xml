@@ -76,13 +76,13 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
     </author>
 
     <author fullname='Robert Raszuk' initials='R' surname='Raszuk'>
-      <organization>Mirantis Inc.</organization>
+      <organization>Bloomberg LP</organization>
       <address>
         <postal>
-          <street>615 National Ave. #100</street>
-          <city>Mt View</city>
-          <region>CA</region>
-          <code>94043</code>
+          <street>731 Lexington Ave</street>
+          <city>New York City</city>
+          <region>NY</region>
+          <code>10022</code>
           <country>USA</country>
         </postal>
         <email>robert@raszuk.net</email>
