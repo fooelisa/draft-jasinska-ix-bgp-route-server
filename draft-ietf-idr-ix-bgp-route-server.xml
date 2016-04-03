@@ -271,8 +271,10 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
             BGP UPDATE messages. Transitive as well as non-transitive
             Communities attributes applied to an NLRI UPDATE sent
             to a route server SHOULD NOT be modified, processed or
-            removed. However, if such an attribute is intended for processing
-            by the route server itself, it MAY be modified or removed.
+            removed, except as defined by local policy.  If a Communities
+            Attribute is intended for processing by the route server
+            itself, as determined by local policy, it MAY be modified or
+            removed.
           </t>
         </section>
 
