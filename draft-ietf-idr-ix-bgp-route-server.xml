@@ -30,7 +30,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
 <!-- keep one blank line between list items -->
 <!-- end of list of popular I-D processing instructions -->
 <rfc category="std"
-     docName="draft-ietf-idr-ix-bgp-route-server-09"
+     docName="draft-ietf-idr-ix-bgp-route-server-10"
      ipr="trust200902"
      obsoletes=""
      updates=""
@@ -102,7 +102,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
       </address>
     </author>
 
-    <date month="October" year="2015" />
+    <date month="April" year="2016" />
     <area>Routing</area>
     <workgroup>IDR Working Group</workgroup>
     <keyword>I-D</keyword>
