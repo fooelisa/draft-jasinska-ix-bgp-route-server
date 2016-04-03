@@ -7,6 +7,7 @@
   <!ENTITY RFC4360 PUBLIC '' "http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.4360.xml">
   <!ENTITY RFC4456 PUBLIC '' "http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.4456.xml">
   <!ENTITY RFC6774 PUBLIC '' "http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.6774.xml">
+  <!ENTITY RFC7454 PUBLIC '' "http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.7454.xml">
   <!ENTITY I-D.ietf-idr-add-paths PUBLIC '' "http://xml2rfc.tools.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-idr-add-paths.xml">
 ]>
 <?xml-stylesheet type='text/xsl'
@@ -484,6 +485,10 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
         security issues may arise unless steps are taken to mitigate against
         path hiding.
       </t>
+      <t>
+        Route server operators should carefully consider the security practices
+        discussed in <xref target="RFC7454" />, "BGP Operations and Security".
+      </t>
     </section>
 
     <section title="IANA Considerations">
@@ -534,6 +539,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
       <?rfc include="http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.1863.xml"?> <!-- old route server rfc -->
       <?rfc include="http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.4223.xml"?> <!-- RFC 1863 to Historic -->
       <?rfc include="http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.4456.xml"?> <!-- Route Reflector IBGP -->
+      <?rfc include="http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.7454.xml"?> <!-- BGP Operations and Security -->
     </references>
   </back>
 
