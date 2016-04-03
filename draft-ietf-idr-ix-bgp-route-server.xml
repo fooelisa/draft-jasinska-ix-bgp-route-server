@@ -162,6 +162,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
         EBGP instead of iBGP. Certain adaptions to <xref target="RFC4271" />
         are required to enable an EBGP router to operate as a route server;
         these are outlined in <xref target="spec" /> of this document.
+        Route server functionality is not mandatory in BGP implementations.``
       </t>
       <t>
         The term "route server" is often in a different context used to
