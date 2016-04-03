@@ -9,7 +9,7 @@
   <!ENTITY RFC6774 PUBLIC '' "http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.6774.xml">
   <!ENTITY I-D.ietf-idr-add-paths PUBLIC '' "http://xml2rfc.tools.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-idr-add-paths.xml">
 ]>
-<?xml-stylesheet type='text/xsl' 
+<?xml-stylesheet type='text/xsl'
 
 href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
 <?rfc strict="yes" ?>
@@ -22,7 +22,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
 <!-- use symbolic references tags, i.e, [RFC2119] instead of [1] -->
 <?rfc sortrefs="yes" ?>
 <!-- sort the reference entries alphabetically -->
-<!-- control vertical white space 
+<!-- control vertical white space
      (using these PIs as follows is recommended by the RFC Editor) -->
 <?rfc compact="yes" ?>
 <!-- do not start each main section on a new page -->
@@ -38,7 +38,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
      xml:lang="en">
   <!-- category values: std, bcp, info, exp, and historic
      ipr values: full3667, noModification3667, noDerivatives3667
-     you can add the attributes updates="NNNN" and obsoletes="NNNN" 
+     you can add the attributes updates="NNNN" and obsoletes="NNNN"
      they will automatically be output with "(if approved)" -->
   <!-- ***** FRONT MATTER ***** -->
 
@@ -53,7 +53,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
       <address>
         <postal>
           <street>ul. Skawinska 27/7</street>
-          <city>Krakow</city> 
+          <city>Krakow</city>
           <region>MP</region>
           <code>31-066</code>
           <country>Poland</country>
@@ -61,13 +61,13 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
         <email>elisa@bigwaveit.org</email>
       </address>
     </author>
-      
+
     <author initials="N" surname="Hilliard" fullname="Nick Hilliard">
       <organization>INEX</organization>
       <address>
         <postal>
           <street>4027 Kingswood Road</street>
-          <city>Dublin</city> 
+          <city>Dublin</city>
           <code>24</code>
           <country>IE</country>
         </postal>
@@ -112,14 +112,14 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
     <abstract>
       <t>
         This document outlines a specification for multilateral
-        interconnections at Internet exchange points (IXPs). Multilateral 
-        interconnection is a method of exchanging routing information between 
+        interconnections at Internet exchange points (IXPs). Multilateral
+        interconnection is a method of exchanging routing information between
         three or more exterior BGP speakers using a single intermediate broker
-        system, referred to as a route server. Route servers are typically 
+        system, referred to as a route server. Route servers are typically
         used on shared access media networks, such as Internet exchange points
-        (IXPs), to facilitate simplified interconnection between multiple 
+        (IXPs), to facilitate simplified interconnection between multiple
         Internet routers.
-      </t> 
+      </t>
     </abstract>
 
   </front>
@@ -152,16 +152,16 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
         reachability information to the route server using exterior BGP, and
         the route server in turn forwards this information to each other
         route server client connected to it, according to its configuration.
-        Although a route server uses BGP to exchange reachability information 
-        with each of its clients, it does not forward traffic itself and is 
+        Although a route server uses BGP to exchange reachability information
+        with each of its clients, it does not forward traffic itself and is
         therefore not a router.
       </t>
       <t>
         A route server can be viewed as similar in function to an <xref
         target="RFC4456" /> route reflector, except that it operates using
-        EBGP instead of iBGP. Certain adaptions to <xref target="RFC4271" /> 
-        are required to enable an EBGP router to operate as a route server; 
-        these are outlined in <xref target="spec" /> of this document. 
+        EBGP instead of iBGP. Certain adaptions to <xref target="RFC4271" />
+        are required to enable an EBGP router to operate as a route server;
+        these are outlined in <xref target="spec" /> of this document.
       </t>
       <t>
         The term "route server" is often in a different context used to
@@ -212,12 +212,12 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
           reachability information, thereby changing the intended routing
           policies of exchange participants. Therefore, contrary to what is
           specified in section 5. of <xref target="RFC4271" />, route servers
-          SHOULD NOT by default (unless explicitly configured) update 
+          SHOULD NOT by default (unless explicitly configured) update
           well-known BGP attributes received from route server clients before
-          redistributing them to their other route server clients. Optional 
-          recognized and unrecognized BGP attributes, whether transitive or 
-          non-transitive, SHOULD NOT be updated by the route server (unless 
-          enforced by local IX operator configuration) and SHOULD be passed 
+          redistributing them to their other route server clients. Optional
+          recognized and unrecognized BGP attributes, whether transitive or
+          non-transitive, SHOULD NOT be updated by the route server (unless
+          enforced by local IX operator configuration) and SHOULD be passed
           on to other route server clients.
         </t>
 
@@ -249,7 +249,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
             segment in any other way.
           </t>
         </section>
- 
+
         <section title="MULTI_EXIT_DISC Attribute">
           <t>
             MULTI_EXIT_DISC is an optional non-transitive attribute intended
@@ -266,7 +266,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
           <t>
             The BGP COMMUNITIES (<xref target="RFC1997" />) and Extended
             Communities (<xref target="RFC4360" />) attributes are
-            attributes intended for labeling information carried in 
+            attributes intended for labeling information carried in
             BGP UPDATE messages. Transitive as well as non-transitive
             Communities attributes applied to an NLRI UPDATE sent
             to a route server SHOULD NOT be modified, processed or
@@ -277,7 +277,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
 
        </section>
 
-      <section title="Per-Client Policy Control in Multilateral Interconnection" anchor="policy"> 
+      <section title="Per-Client Policy Control in Multilateral Interconnection" anchor="policy">
         <t>
           While IXP participants often use route servers with the intention
           of interconnecting with as many other route server participants as
@@ -287,7 +287,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
         </t>
         <t>
           The control of path distribution on a per-client basis can lead to a
-          path being hidden from the route server client. We refer to this as 
+          path being hidden from the route server client. We refer to this as
           "path hiding".
         </t>
         <t>
@@ -296,7 +296,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
           information purposes only.
         </t>
 
-        <section title="Path Hiding on a Route Server" anchor="path_hiding"> 
+        <section title="Path Hiding on a Route Server" anchor="path_hiding">
 
           <figure title="Per-Client Policy Controlled Interconnection at an IXP" anchor="ixp_policy_interconnection">
             <preamble></preamble>
@@ -323,11 +323,11 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
             />, AS1 does not directly exchange prefix information with either
             AS2 or AS3 at the IXP, but only interconnects with AS4.
           </t>
-          <t> 
-            In the traditional bilateral interconnection model, per-client 
-            policy control to a third party exchange participant is 
+          <t>
+            In the traditional bilateral interconnection model, per-client
+            policy control to a third party exchange participant is
             accomplished either by not engaging in a bilateral interconnection
-            with that participant or else by implementing outbound filtering 
+            with that participant or else by implementing outbound filtering
             on the BGP session towards that participant. However, in a
             multilateral interconnection environment, only the route server
             can perform outbound filtering in the direction of the
@@ -335,12 +335,12 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
             route server to perform their outbound filtering for them.
           </t>
           <t>
-            Assuming a traditional best path selection, when the same prefix 
-            is advertised to a route server from multiple route server 
-            clients, the route server will select a single best path for 
+            Assuming a traditional best path selection, when the same prefix
+            is advertised to a route server from multiple route server
+            clients, the route server will select a single best path for
             propagation to all connected clients. If, however, the route
             server has been configured to filter the calculated best path
-            from reaching a particular route server client, then that client 
+            from reaching a particular route server client, then that client
             will not receive a path for that prefix, although alternate paths
             received by the route server might have been policy compliant for
             that client. This phenomenon is referred to as "path hiding".
@@ -349,8 +349,8 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
             For example, in <xref target="ixp_policy_interconnection" />, if
             the same prefix were sent to the route server via AS2 and AS4, and
             the route via AS2 was preferred according to BGP's traditional
-            best path selection, but AS1's policy prevents AS2's path from 
-            being accepted, then AS1 would never receive a path to this 
+            best path selection, but AS1's policy prevents AS2's path from
+            being accepted, then AS1 would never receive a path to this
             prefix, even though the route server had
             previously received a valid alternative path via AS4. This happens
             because the best path selection is performed only once on the
@@ -366,7 +366,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
           </t>
         </section>
 
-        <section title="Mitigation of Path Hiding" anchor="no_path_hiding"> 
+        <section title="Mitigation of Path Hiding" anchor="no_path_hiding">
         <t>
           There are several approaches which can be taken to mitigate
           against path hiding.
@@ -374,9 +374,9 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
           <section title="Multiple Route Server RIBs" anchor="multiple_ribs">
             <t>
               The most portable method to allow for per-client policy control
-              without the occurrence of path hiding, is by using a route 
-              server BGP implementation which performs the per-client best 
-              path calculation for each set of paths to a prefix, which 
+              without the occurrence of path hiding, is by using a route
+              server BGP implementation which performs the per-client best
+              path calculation for each set of paths to a prefix, which
               results after the route server's client policies have been taken
               into consideration. This can be implemented by using per-client
               Loc-RIBs, with path filtering implemented between the Adj-RIB-In
@@ -399,9 +399,9 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
               the BGP path selection decision process described in <xref
               target="RFC4271" />. If, however, it were possible for the route
               server to send more than a single path to a route server client,
-              then route server clients would no longer depend on receiving 
-              a single best path to a particular prefix; consequently, the 
-              path hiding problem described in <xref target="path_hiding" /> 
+              then route server clients would no longer depend on receiving
+              a single best path to a particular prefix; consequently, the
+              path hiding problem described in <xref target="path_hiding" />
               would disappear.
             </t>
             <t>
@@ -409,7 +409,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
               increased path diversity could be implemented.
             </t>
 
-            <section title="Diverse BGP Path Approach" anchor="diverse_bgp"> 
+            <section title="Diverse BGP Path Approach" anchor="diverse_bgp">
               <t>
                 The Diverse BGP Path proposal as defined in <xref
                 target="RFC6774"></xref> is a
@@ -433,7 +433,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
               </t>
             </section>
 
-            <section title="BGP ADD-PATH Approach"> 
+            <section title="BGP ADD-PATH Approach">
               <t>
                 The <xref target="I-D.ietf-idr-add-paths"></xref> Internet
                 draft proposes a different approach to multiple path
@@ -443,7 +443,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
                 implement an implicit withdraw when it receives an UPDATE
                 message for a prefix which already exists in its Adj-RIB-In,
                 this approach requires explicit support for the feature both
-                on the route server and on its clients. 
+                on the route server and on its clients.
               </t>
               <t>
                 If the ADD-PATH capability is negotiated bidirectionally
@@ -454,8 +454,8 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
                 the route server, thereby causing loss of reachability to
                 other route server clients. For this reason, ADD-PATH
                 implementations on a route server should enforce send-only
-                mode with the route server clients, which would result in 
-                negotiating receive-only mode from the client to the route 
+                mode with the route server clients, which would result in
+                negotiating receive-only mode from the client to the route
                 server.
               </t>
             </section>
@@ -491,8 +491,8 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
 
     <section title="Acknowledgments">
       <t>
-        The authors would like to thank Ryan Bickhart, Steven Bakker, Martin 
-        Pels, Chris Hall, Aleksi Suhonen, Bruno Decraene, 
+        The authors would like to thank Ryan Bickhart, Steven Bakker, Martin
+        Pels, Chris Hall, Aleksi Suhonen, Bruno Decraene,
         Pierre Francois and Eduardo Ascenco Reis for their valuable input.
       </t>
       <t>
@@ -512,7 +512,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
         Note that <xref target="RFC1863" /> was made historical by <xref
         target="RFC4223" />.
       </t>
-      
+
     </section>
   </middle>
 
