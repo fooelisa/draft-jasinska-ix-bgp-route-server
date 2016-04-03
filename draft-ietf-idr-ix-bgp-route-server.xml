@@ -218,7 +218,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
           redistributing them to their other route server clients. Optional
           recognized and unrecognized BGP attributes, whether transitive or
           non-transitive, SHOULD NOT be updated by the route server (unless
-          enforced by local IX operator configuration) and SHOULD be passed
+          enforced by local IXP operator configuration) and SHOULD be passed
           on to other route server clients.
         </t>
 
