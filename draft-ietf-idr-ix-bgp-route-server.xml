@@ -255,10 +255,13 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
           </t>
           <t>
             In contrast to what is recommended in section 6.3 of <xref
-            target="RFC4271" />, the route server client SHOULD accept UPDATE
-            messages of this form, even though the leftmost AS in the AS_PATH
-            attribute is not equal to the AS number of the route server that
-            sent the UPDATE message.
+            target="RFC4271" />, route server clients need to be able to accept
+            UPDATE messages where the leftmost AS in the AS_PATH attribute is
+            not equal to the AS number of the route server that sent the UPDATE
+            message.  If the route server client BGP system has implemented a
+            check for this, the BGP implementation MUST allow this check to be
+            disabled and SHOULD allow the check to be disabled on a per-peer
+            basis.
           </t>
         </section>
 
@@ -494,6 +497,20 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
         server clients. Route server operators should be aware that
         security issues may arise unless steps are taken to mitigate against
         path hiding.
+      </t>
+      <t>
+        The AS_PATH check described in <xref target="as_path_attr"> is normally
+        enabled in order to check for malformed AS paths.  If this check is
+        disabled, the route server client loses the ability to check incoming
+        UPDATE messages for certain categories of problems.  This could
+        potentially cause corrupted BGP UPDATE messages to be propagated where
+        they might not be propagated if the check were enabled.  Regardless of
+        any problems relating to malformed UPDATE messages, this check is also
+        used to detect BGP loops, so removing the check could potentially cause
+        routing loops to be formed.  Consequently, this check SHOULD NOT be
+        disabled by IXP participants unless it is needed to establish BGP
+        sessions with a route server, and if possible should only be disabled
+        for peers which are route servers.
       </t>
       <t>
         Route server operators should carefully consider the security practices
