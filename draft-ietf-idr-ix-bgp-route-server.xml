@@ -200,8 +200,8 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
           particular client as described in <xref target="multiple_paths"
           /> or multiple Loc-RIBs as described in <xref
           target="multiple_ribs" />. The route server SHOULD forward
-          UPDATE messages where appropriate from its Loc-RIB or Loc-RIBs to
-          its clients.
+          UPDATE messages from its Loc-RIB or Loc-RIBs to its clients as
+          determined by local policy.
         </t>
       </section>
 
