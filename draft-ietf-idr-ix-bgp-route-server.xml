@@ -353,10 +353,10 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
           <t>
             For example, in <xref target="ixp_policy_interconnection" />, if
             the same prefix were sent to the route server via AS2 and AS4, and
-            the route via AS2 was preferred according to BGP's traditional
-            Decision Process, but AS1's policy prevents AS2's path from
-            being accepted, then AS1 would never receive a path to this
-            prefix, even though the route server had
+            the route via AS2 was preferred according to the BGP Decision
+            Process on the route server, but AS2's policy prevented the route
+            server from sending the path to AS1, then AS1 would never receive
+            a path to this prefix, even though the route server had
             previously received a valid alternative path via AS4. This happens
             because the BGP Decision Process is performed only once on the
             route server for all clients.
