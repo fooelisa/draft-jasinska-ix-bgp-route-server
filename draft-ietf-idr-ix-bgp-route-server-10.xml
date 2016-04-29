@@ -499,7 +499,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
         path hiding.
       </t>
       <t>
-        The AS_PATH check described in <xref target="as_path_attr"> is normally
+        The AS_PATH check described in <xref target="as_path_attr" /> is normally
         enabled in order to check for malformed AS paths.  If this check is
         disabled, the route server client loses the ability to check incoming
         UPDATE messages for certain categories of problems.  This could
