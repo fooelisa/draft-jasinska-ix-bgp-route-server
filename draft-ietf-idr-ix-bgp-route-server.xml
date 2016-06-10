@@ -188,6 +188,14 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
 
 
     <section title="Technical Considerations for Route Server Implementations" anchor="spec">
+      <t>
+        A route server uses the <xref target="RFC4271" /> Border Gateway
+        Protocol to broker network reachability information between its
+        clients.  There are some differences between the behaviour of a BGP
+        route server and a BGP implementation which is strictly compliant
+        with <xref target="RFC4271" />.  These differences are described as
+        follows.
+      </t>
 
       <section title="Client UPDATE Messages">
         <t>
