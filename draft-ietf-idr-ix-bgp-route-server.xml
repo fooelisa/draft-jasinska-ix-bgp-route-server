@@ -9,6 +9,7 @@
   <!ENTITY RFC6774 PUBLIC '' "http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.6774.xml">
   <!ENTITY RFC7454 PUBLIC '' "http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.7454.xml">
   <!ENTITY I-D.ietf-idr-add-paths PUBLIC '' "http://xml2rfc.tools.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-idr-add-paths.xml">
+  <!ENTITY I-D.ietf-grow-ix-bgp-route-server-operations PUBLIC '' "http://xml2rfc.tools.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-grow-ix-bgp-route-server-operations.xml">
 ]>
 <?xml-stylesheet type='text/xsl'
 
@@ -485,6 +486,11 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
           the methods described in <xref target="no_path_hiding" /> to allow
           per-client route server policy control without "path hiding".
         </t>
+        <t>
+          Recommendations for route server operations are described
+          separately in <xref target="I-D.ietf-grow-ix-bgp-route-server-operations">
+          </xref>.
+        </t>
         </section>
       </section>
     </section>
@@ -562,6 +568,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
 
     <references title="Informative References">
       <?rfc include="http://xml2rfc.tools.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-idr-add-paths.xml"?>
+      <?rfc include="http://xml2rfc.tools.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-grow-ix-bgp-route-server-operations.xml"?>
       <?rfc include="http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.6774.xml"?> <!-- diverse paths -->
       <?rfc include="http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.1863.xml"?> <!-- old route server rfc -->
       <?rfc include="http://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.4223.xml"?> <!-- RFC 1863 to Historic -->
