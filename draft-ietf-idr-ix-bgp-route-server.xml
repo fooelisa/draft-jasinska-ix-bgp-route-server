@@ -115,11 +115,11 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
       <t>
         This document outlines a specification for multilateral
         interconnections at Internet exchange points (IXPs). Multilateral
-        interconnection is a method of exchanging routing information between
+        interconnection is a method of exchanging routing information among
         three or more external BGP speakers using a single intermediate broker
         system, referred to as a route server. Route servers are typically
         used on shared access media networks, such as Internet exchange points
-        (IXPs), to facilitate simplified interconnection between multiple
+        (IXPs), to facilitate simplified interconnection among multiple
         Internet routers.
       </t>
     </abstract>
@@ -142,7 +142,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
         bilateral external BGP sessions between exchange participants were
         previously the most common means of exchanging reachability
         information, the overhead associated with dense interconnection can
-        cause substantial operational scaling problems for partipants of
+        cause substantial operational scaling problems for participants of
         larger Internet exchange points.
       </t>
       <t>
@@ -164,7 +164,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
         EBGP instead of iBGP. Certain adaptions to <xref target="RFC4271" />
         are required to enable an EBGP router to operate as a route server;
         these are outlined in <xref target="spec" /> of this document.
-        Route server functionality is not mandatory in BGP implementations.``
+        Route server functionality is not mandatory in BGP implementations.
       </t>
       <t>
         The term "route server" is often in a different context used to
@@ -190,7 +190,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
     <section title="Technical Considerations for Route Server Implementations" anchor="spec">
       <t>
         A route server uses the <xref target="RFC4271" /> Border Gateway
-        Protocol to broker network reachability information between its
+        Protocol to broker network reachability information amongst its
         clients.  There are some differences between the behaviour of a BGP
         route server and a BGP implementation which is strictly compliant
         with <xref target="RFC4271" />.  These differences are described as
