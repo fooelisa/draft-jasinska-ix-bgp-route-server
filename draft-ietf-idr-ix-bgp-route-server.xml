@@ -262,9 +262,9 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
             requires that the BGP speaker prepends its own AS number as
             the last element of the AS_PATH segment.  While it is technically
             possible to operate a route server which prepends its own AS to
-            the AS_PATH segment, it is not recommended to do so because this
-            may adversely affect the resulting network topology between the
-            route server clients.
+            the AS_PATH, it is not recommended to do so because creating an
+            undesirably longer AS_PATH may adversely affect the resulting
+            network topology between the route server clients.
           </t>
           <t>
             In contrast to what is recommended in section 6.3 of <xref
