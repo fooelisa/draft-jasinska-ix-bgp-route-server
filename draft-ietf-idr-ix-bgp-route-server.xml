@@ -394,7 +394,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
             Path hiding will only occur on route servers which employ
             per-client policy control; if an IXP operator deploys a route
             server without implementing a per-client routing policy control
-            system, then path hiding does not occur as all paths are
+            system, then path hiding does not occur, as all paths are
             considered equally valid from the point of view of the route
             server.
           </t>
