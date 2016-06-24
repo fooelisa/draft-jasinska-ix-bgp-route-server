@@ -149,14 +149,14 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
         Multilateral interconnection is a method of interconnecting BGP
         speaking routers using a third party brokering system, commonly
         referred to as a route server and typically managed by the IXP
-        operator. Each of the multilateral interconnection participants
-        (usually referred to as route server clients) announces network
-        reachability information to the route server using external BGP, and
-        the route server in turn forwards this information to each other
-        route server client connected to it, according to its configuration.
-        Although a route server uses BGP to exchange reachability information
-        with each of its clients, it does not forward traffic itself and is
-        therefore not a router.
+        operator.  Each multilateral interconnection participant (usually
+        referred to as a "route server client") announces network reachability
+        information to the route server using external BGP.  The route server,
+        in turn, forwards this information to each other route server client
+        connected to it, according to its configuration.  Although a route
+        server uses BGP to exchange reachability information with each of its
+        clients, it does not forward traffic itself and is therefore not a
+        router.
       </t>
       <t>
         A route server can be viewed as similar in function to an <xref
