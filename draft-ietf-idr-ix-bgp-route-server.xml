@@ -251,31 +251,39 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
             autonomous systems through which routing information carried in
             the UPDATE message has passed.
           </t>
-          <t>
-            As a route server does not participate in the process of
-            forwarding data between client routers, and because modification
-            of the AS_PATH attribute could affect route server client
-            BGP Decision Process, the route server SHOULD NOT prepend
-            its own AS number to the AS_PATH segment nor modify the AS_PATH
-            segment in any other way.  This differs from the behaviour
-            specified in section 5.1.2 of <xref target="RFC4271" />, which
-            requires that the BGP speaker prepends its own AS number as
-            the last element of the AS_PATH segment.  While it is technically
-            possible to operate a route server which prepends its own AS to
-            the AS_PATH, it is not recommended to do so because creating an
-            undesirably longer AS_PATH may adversely affect the resulting
-            network topology between the route server clients.
-          </t>
-          <t>
-            In contrast to what is recommended in section 6.3 of <xref
-            target="RFC4271" />, route server clients need to be able to accept
-            UPDATE messages where the leftmost AS in the AS_PATH attribute is
-            not equal to the AS number of the route server that sent the UPDATE
-            message.  If the route server client BGP system has implemented a
-            check for this, the BGP implementation MUST allow this check to be
-            disabled and SHOULD allow the check to be disabled on a per-peer
-            basis.
-          </t>
+
+          <section title="Route Server AS_PATH management" anchor="as_path_attr_rs">
+            <t>
+              As a route server does not participate in the process of
+              forwarding data between client routers, and because modification
+              of the AS_PATH attribute could affect route server client BGP
+              Decision Process, the route server SHOULD NOT prepend its own AS
+              number to the AS_PATH segment nor modify the AS_PATH segment in
+              any other way.  This differs from the behaviour specified in
+              section 5.1.2 of <xref target="RFC4271" />, which requires that
+              the BGP speaker prepends its own AS number as the last element
+              of the AS_PATH segment.  This is a recommendation rather than a
+              requirement solely to provide backwards compatibility with
+              legacy route server client implementations which do not yet
+              support the requirements specified in <xref
+              target="as_path_attr_client"
+              />.
+            </t>
+          </section>
+
+          <section title="Route Server client AS_PATH management" anchor="as_path_attr_client">
+            <t>
+              In contrast to what is recommended in section 6.3 of <xref
+              target="RFC4271" />, route server clients need to be able to accept
+              UPDATE messages where the leftmost AS in the AS_PATH attribute is
+              not equal to the AS number of the route server that sent the UPDATE
+              message.  If the route server client BGP system has implemented a
+              check for this, the BGP implementation MUST allow this check to be
+              disabled and SHOULD allow the check to be disabled on a per-peer
+              basis.
+            </t>
+          </section>
+
         </section>
 
         <section title="MULTI_EXIT_DISC Attribute">
