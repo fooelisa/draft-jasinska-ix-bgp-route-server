@@ -351,7 +351,10 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
           <t>
             Using the example in <xref target="ixp_policy_interconnection"
             />, AS1 does not directly exchange prefix information with either
-            AS2 or AS3 at the IXP, but only interconnects with AS4.
+            AS2 or AS3 at the IXP, but only interconnects with AS4.  The lines
+            between AS1, AS2, AS3 and AS4 represent interconnection
+            relationships, whether via bilateral or multilateral
+            connections.
           </t>
           <t>
             In the traditional bilateral interconnection model, per-client
