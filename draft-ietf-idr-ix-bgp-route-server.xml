@@ -527,7 +527,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
         potentially cause corrupted BGP UPDATE messages to be propagated where
         they might not be propagated if the check were enabled.  Regardless of
         any problems relating to malformed UPDATE messages, this check is also
-        used to detect BGP loops, so removing the check could potentially cause
+        used to detect BGP loops; removing the check could potentially cause
         routing loops to be formed.  Consequently, this check SHOULD NOT be
         disabled by IXP participants unless it is needed to establish BGP
         sessions with a route server, and if possible should only be disabled
