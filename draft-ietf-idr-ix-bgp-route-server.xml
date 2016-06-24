@@ -408,7 +408,7 @@ href="http://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629.xslt" ?>
           <section title="Multiple Route Server RIBs" anchor="multiple_ribs">
             <t>
               The most portable method to allow for per-client policy control
-              without the occurrence of path hiding, is by using a route
+              without the occurrence of path hiding, is to use a route
               server BGP implementation which performs the per-client best
               path calculation for each set of paths to a prefix, which
               results after the route server's client policies have been taken
